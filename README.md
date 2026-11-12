@@ -12,3 +12,6 @@ Kostenloses Trading-Journal für MetaTrader 5 mit Prop-Firm-Tracker. Läuft loka
 Updates findet das Journal selbst. Dabei wird nur gelesen, welche Version aktuell ist.
 
 TradeJournal ist ein Werkzeug zur Dokumentation und Auswertung, keine Anlageberatung. Nicht verbunden mit MetaQuotes oder einer Prop-Firm.
+
+## Nutzung
+Kostenlos für dein eigenes Trading. Verkauf, Weitergabe gegen Geld und veränderte Weiterverbreitung sind ohne schriftliche Zustimmung nicht erlaubt. Der genaue Wortlaut steht in [LICENSE](LICENSE).
