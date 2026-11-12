@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>TradeJournal – Trading-Journal für MetaTrader 5 und Prop-Firm-Konten</title>
-<meta name="description" content="Kostenloses Trading-Journal für MetaTrader 5: automatischer Import, Prop-Firm-Tracker, Auswertungen, Tagebuch und Backtesting. Läuft lokal, deine Daten bleiben auf deinem PC.">
+<meta name="description" content="Kostenloses Trading-Journal für MetaTrader 5: automatischer Import, Prop-Firm-Tracker, Auswertungen und Tagebuch. Läuft lokal, deine Daten bleiben auf deinem PC.">
 <meta property="og:title" content="TradeJournal">
 <meta property="og:description" content="Kostenloses Trading-Journal für MetaTrader 5 und Prop-Firm-Konten.">
 <meta property="og:image" content="img/dashboard.webp">
@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
 <style>
-/* Layout: Produktseite in einer Spalte – Kopf mit Download, großes App-Bild, Funktionen im Raster, Backtesting mit Bildern, Installation in 3 Schritten */
+/* Layout: Produktseite in einer Spalte – Kopf mit Download, großes App-Bild, Funktionen im Raster, Installation in 3 Schritten */
 :root {
   --bg: #0a0c13; --panel: #121621; --panel2: #171c29; --line: #232a3b;
   --fg: #e8ebf3; --muted: #8e97ab; --accent: #8b6cff; --accent2: #5b3fd9;
@@ -96,7 +96,7 @@ footer p { margin: 0; max-width: 70ch; }
 <nav>
   <div class="wrap">
     <a class="logo" href="#"><i aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></i>TradeJournal</a>
-    <div class="links"><a href="#funktionen">Funktionen</a><a href="#prop">Prop-Firms</a><a href="#backtesting">Backtesting</a><a href="#installation">Installation</a></div>
+    <div class="links"><a href="#funktionen">Funktionen</a><a href="#prop">Prop-Firms</a><a href="#installation">Installation</a></div>
     <a class="btn primary sm" href="https://github.com/TheMadMav/TradeJournal/releases/latest">Download</a>
   </div>
 </nav>
@@ -108,7 +108,7 @@ footer p { margin: 0; max-width: 70ch; }
     <p class="lead">TradeJournal holt deine Trades automatisch aus MetaTrader 5, zeigt dir, wo du Geld verdienst und wo du es verlierst, und behält deine Prop-Firm-Regeln im Blick. Alles läuft auf deinem eigenen PC.</p>
     <div class="ctas">
       <a class="btn primary" href="https://github.com/TheMadMav/TradeJournal/releases/latest"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Kostenlos herunterladen</a>
-      <a class="btn" href="#backtesting">Backtesting ansehen</a>
+      <a class="btn" href="#funktionen">Funktionen ansehen</a>
     </div>
     <div class="meta"><span>Für Windows 10 und 11</span><span>Keine Anmeldung</span><span>Daten bleiben auf deinem PC</span><span>Automatische Updates</span></div>
     <div class="shot"><img src="img/dashboard.webp" width="1600" height="1000" alt="Dashboard von TradeJournal mit Netto-Gewinn, Trefferquote, Performance-Score und kumulierter Kurve (Beispieldaten)"></div>
@@ -160,71 +160,6 @@ footer p { margin: 0; max-width: 70ch; }
       </ul>
     </div>
     <img src="img/journal.webp" width="1600" height="1000" loading="lazy" alt="Kalender im Tagebuch mit Tagesergebnissen und Wochensummen (Beispieldaten)">
-  </div>
-</section>
-
-<section id="backtesting">
-  <div class="wrap">
-    <div class="bt-head">
-      <span class="pill">Neu · kommt mit dem nächsten Update</span>
-      <h2 style="margin-top:14px">Backtesting im Replay</h2>
-      <p class="sub">Spiel den Markt Minute für Minute ab, zeichne wie in TradingView und handle im Ablauf, ohne die Zukunft zu sehen. Jeder Trade wird bewertet wie ein echter und landet in einer eigenen Auswertung, getrennt von deinen Live-Trades.</p>
-    </div>
-    <div class="bt-rows">
-      <div class="split">
-        <div class="txt">
-          <span class="badge">Replay &amp; Chart</span>
-          <h2>Handeln wie live, nur in der Vergangenheit</h2>
-          <ul class="check">
-            <li><b>Echte Minutendaten</b> für Forex, Gold und Indizes, Kerzen passend zu TradingView</li>
-            <li><b>Schrittweite frei wählbar:</b> auf dem M5-Chart nur eine Minute oder gleich eine Stunde weiter</li>
-            <li><b>Springen</b> zur nächsten Session oder zu einer Uhrzeit</li>
-            <li><b>25 Zeichenwerkzeuge</b> mit Vorlagen, Magnet und Long-/Short-Werkzeug</li>
-            <li><b>Market, Limit und Stop</b> mit SL, TP und Break-even direkt im Chart verschieben</li>
-          </ul>
-        </div>
-        <img src="img/bt-workspace.webp" width="1600" height="1000" loading="lazy" alt="Backtesting-Arbeitsplatz mit USDJPY im 5-Minuten-Chart, offener Long-Position, Zeichnungen, Volumenprofil und Trade-Liste (Beispieldaten)">
-      </div>
-      <div class="split rev">
-        <div class="txt">
-          <span class="badge">Multi-Timeframe &amp; Level</span>
-          <h2>Zwei Charts, ein Ablauf</h2>
-          <ul class="check">
-            <li><b>Zweiter Chart</b> mit eigener Zeiteinheit läuft im Replay synchron mit</li>
-            <li><b>Zeichnungen, Positionslinien und Indikatoren</b> wahlweise auf beide Charts übernehmen</li>
-            <li><b>Prime Levels:</b> Vortageshoch/-tief, runde Zahlen, POC und Volumenprofil je Tag</li>
-            <li><b>EMA, MA und SMA</b> mit Farbe, Länge und Linienstil frei einstellbar</li>
-          </ul>
-        </div>
-        <img src="img/bt-mtf.webp" width="1600" height="1000" loading="lazy" alt="Zwei Charts nebeneinander: links 1 Stunde mit Vortageslevel und POC-Linien, rechts 5 Minuten mit Volumenprofil (Beispieldaten)">
-      </div>
-      <div class="split">
-        <div class="txt">
-          <span class="badge">Trade-Bewertung</span>
-          <h2>Jeder Trade wird ehrlich bewertet</h2>
-          <ul class="check">
-            <li><b>Bewertungsfenster</b> direkt nach dem Ausstieg, mit Screenshot vom Chart</li>
-            <li><b>Emotion, Überzeugung und Sterne</b> genau wie bei deinen Live-Trades</li>
-            <li><b>Regel-Check</b> für deine Strategie und deine allgemeinen Regeln</li>
-            <li><b>Notizen und Erkenntnisse</b>, damit du aus jedem Trade lernst</li>
-          </ul>
-        </div>
-        <img src="img/bt-trade.webp" width="1600" height="1000" loading="lazy" alt="Bewertungsfenster eines Backtest-Trades mit Chart-Screenshot, Emotionen, Notizen und Regel-Check (Beispieldaten)">
-      </div>
-      <div class="split rev">
-        <div class="txt">
-          <span class="badge">Auswertung</span>
-          <h2>Ein eigenes Dashboard fürs Backtesting</h2>
-          <ul class="check">
-            <li><b>Alle Kennzahlen</b> wie im Journal: Netto, Trefferquote, Profit-Faktor, R und Drawdown</li>
-            <li><b>Nach Zeit, Session, Strategie und Tags</b> auswerten</li>
-            <li><b>Sitzungen vergleichen</b> oder alle zusammen ansehen</li>
-            <li><b>Sauber getrennt:</b> Backtests vermischen sich nie mit deinen Live-Konten</li>
-          </ul>
-        </div>
-        <img src="img/bt-report.webp" width="1600" height="1000" loading="lazy" alt="Auswertung einer Backtesting-Sitzung mit Netto-P&amp;L, Trefferquote, Performance-Score und Kurve (Beispieldaten)">
-      </div>
-    </div>
   </div>
 </section>
 
