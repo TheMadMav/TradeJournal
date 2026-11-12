@@ -3,7 +3,6 @@
 Kostenloses Trading-Journal für MetaTrader 5 mit Prop-Firm-Tracker. Läuft lokal auf deinem Windows-PC, deine Daten bleiben bei dir.
 
 - **Download:** [neueste Version](https://github.com/TheMadMav/TradeJournal/releases/latest)
-- **Webseite:** https://themadmav.github.io/TradeJournal/
 
 ## Installation
 1. `TradeJournal-x.y.z.zip` herunterladen und mit „Alle extrahieren“ entpacken.
